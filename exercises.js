@@ -97,7 +97,15 @@ console.log(plainBox);
             - add a key named `driver` and set it to be `null`.
             - add a key named `passengers` and set it to be an empty array.
 */
+var stockCar= {
+model : "nissan",
+year : 2015,
+automaticTransmission : true,
+driver : null,
+passangers : []
 
+}
+console.log(stockCar);
 
 /*
 
