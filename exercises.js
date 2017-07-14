@@ -124,12 +124,67 @@ console.log(stockCar);
    the value at `name`, and just the value at `age`.
  */
 
+var plainPerson = {};
+
+function buildPerson (person, nameString, age){
+  var replaceP = (person) + 1;
+  return {
+
+
+  name : [1],
+  age : [2],
+}
+}
+console.log(buildPerson([0]));
+
+
+
+//var plainPerson = {};
+//function buildPerson (person, nameString, age){
+//var str =  buildPerson.split (" ");
+ // plainPerson.name = [1];
+ // plainPerson.age = [2];
+
+//return [1];
+
+//  for (var i = 0; i< buildPerson.length; i++){
+
+  
+//}
+
+//console.log(buildPerson([1]));
 
 /*
 7. Display values of objects that are inside an array
    Declare a new variable named `arrayOfObjects` and set it to be [this array of objects
    (https://gist.github.com/sgnl/958adf99007329d2e4ff).
+[
+{
+  id: 0,
+  date: "Monday Jan 25 2015 2:01 PM",
+  total: "279.38"
 
+},
+{
+  id: 1,
+
+    date: "Monday Jan 27 2015 11:31 AM",
+
+    total: "79.80"
+
+  },
+
+  {
+
+    id: 2,
+
+    date: "Monday Feb 1 2015 7:56 AM",
+
+    total: "15.62"
+
+  },
+
+}]
    Declare a new function named `printOrders`and set one parameter called `orders`. Within this function you 
    will return a string that prints the order details to the page in the following format.
 
@@ -149,8 +204,47 @@ console.log(stockCar);
             =====
             ...
  */
+var newArr =  [
+{
+  id: 0,
+  date: "Monday Jan 25 2015 2:01 PM",
+  total: "279.38"
+
+},
+{
+  id: 1,
+
+    date: "Monday Jan 27 2015 11:31 AM",
+
+    total: "79.80"
+
+  },
+
+  {
+
+    id: 2,
+
+    date: "Monday Feb 1 2015 7:56 AM",
+
+    total: "15.62"
+
+  },
+
+]
+var seperArr = newArr.split;
+var EmptArr = [];
+console.log(seperArr);
 
 
+function printOrders (orders){
+  for( var i = 0; i<orders.length; i++){
+console.log(orders[i].id);
+console.log(orders[i].date);
+console.log(orders[i].total);
+
+  }
+}
+ printOrders(newArr);
 /*
 8. Addition with an object
    Declare a new variable named sumObj and set it to be a new object with the properties `a`, `b`, and `result`. 
@@ -163,8 +257,23 @@ console.log(stockCar);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+var sumObj = {
+  a: 1,
+  b: 2,
+  result: undefined
+}
+var newObj = "shoe";
+var sumObjResult = sumObj.a + sumObj.b + newObj;
 
+function objectAddition(newObj){
+for (var i = 0; i<newObj.length; i++){
 
+    return (sumObj.a + sumObj.b) + newObj;
+  
+}
+    
+}
+objectAddition(sumObj); 
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
