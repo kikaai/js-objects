@@ -257,23 +257,20 @@ console.log(orders[i].total);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+
 var sumObj = {
   a: 1,
   b: 2,
   result: undefined
-}
-var newObj = "shoe";
-var sumObjResult = sumObj.a + sumObj.b + newObj;
+};
 
 function objectAddition(newObj){
-for (var i = 0; i<newObj.length; i++){
+  newObj.result = newObj.a + newObj.b;
+  return newObj;
+}
 
-    return (sumObj.a + sumObj.b) + newObj;
-  
-}
-    
-}
-objectAddition(sumObj); 
+console.log('newobj: ', objectAddition(sumObj));
+
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
@@ -302,7 +299,19 @@ objectAddition(sumObj);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
+   /*var numsInPlainBox = 1<= 11;
+function putInPlainBox(cat, numsInPlainBox){
+  (cat + numsInPlainBox);
+    }
+    var result = putInPlainBox(1,2);
+    console.log(result);
 
+  /*for(var i = 0; i>putInPlainBox; i++){
+
+    console.log()
+  }
+}
+putInPlainBox(i);
 /*
 11. Detecting transmission
     Declare a function named detectingTransmission and a single parameter which will be an object. Within this function 
@@ -315,6 +324,16 @@ objectAddition(sumObj);
  */
 
 
+/*function detectingTransmission (automaticTransmission){
+  if (automatictransmission === true){
+    return "Automatic Transmission";
+  }else{
+    return "Manual Transmission";
+  }
+  
+}
+var whatAreYou = detectingTransmission(automaticTransmission)
+console.log(whatAreYou);
 /*
 12.  Who's driving this thing?!
      As you may have noticed that the `stockCar` doesn't have a driver!
